@@ -1,4 +1,4 @@
-
+ 
 <%@page import="java.util.Iterator"%>
 <%@page import="java.util.List"%>
 <%@page import="in.co.rays.project_3.model.ModelFactory"%>
@@ -20,7 +20,7 @@
 	src="<%=ORSView.APP_CONTEXT%>/js/CheckBox11.js"></script>
 <style>
 .hm {
-	background-image: url('<%=ORSView.APP_CONTEXT%>/img/userlistimg.png');
+	background-image: url('<%=ORSView.APP_CONTEXT%>/img/list2.jpg');
 	
 	background-repeat: no-repeat;
 	background-attachment: fixed; 
@@ -124,7 +124,7 @@
 				<div class="col-sm-3"><%=HTMLUtility.getList("Role", String.valueOf(dto.getRoleId()), list1)%></div>
 
 				<div class="col-sm-2">
-					<input type="submit" class="btn btn-primary btn-md"
+					<input type="submit" class="btn btn-dark btn-md"
 						style="font-size: 15px" name="operation"
 						value="<%=UserListCtl.OP_SEARCH%>">&emsp; <input
 						type="submit" class="btn btn-dark btn-md" style="font-size: 15px"
@@ -135,7 +135,7 @@
 
 			</br>
 			<div style="margin-bottom: 20px;" class="table-responsive">
-				<table class="table table-bordered table-dark table-hover">
+				<table class="table table-bordered table-warning table-hover">
 					<thead>
 						<tr style="background-color: #8C8C8C;">
 

@@ -9,10 +9,11 @@ import in.co.rays.project_3.exception.RecordNotFoundException;
 
 /**
  * Interface of User model
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public interface UserModelInt {
+	
 public long add(UserDTO dto)throws ApplicationException,DuplicateRecordException;
 public void delete(UserDTO dto)throws ApplicationException;
 public void update(UserDTO dto)throws ApplicationException,DuplicateRecordException;

@@ -23,7 +23,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * forget password ctl.To perform password send in email
  * 
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 @WebServlet(urlPatterns = { "/ForgetPasswordCtl" })
@@ -53,6 +53,7 @@ public class ForgetPasswordCtl extends BaseCtl {
 		populateBean(dto, request);
 		System.out.println("Hello");
 		return dto;
+		
 
 	}
 
@@ -73,7 +74,7 @@ public class ForgetPasswordCtl extends BaseCtl {
 			try {
 				userModel.forgetPassword(dto.getLogin());
 				ServletUtility.setSuccessMessage("Password has been sent to your registered email id.", request);
-
+				
 			} catch (RecordNotFoundException e) {
 				ServletUtility.setErrorMessage(e.getMessage(), request);
 				log.error(e);

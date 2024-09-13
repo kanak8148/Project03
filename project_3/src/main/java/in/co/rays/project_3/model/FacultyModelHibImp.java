@@ -18,7 +18,7 @@ import in.co.rays.project_3.util.HibDataSource;
 
 /**
  * Hibernate implements of Faculty model
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public class FacultyModelHibImp implements FacultyModelInt{

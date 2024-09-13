@@ -24,7 +24,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * User List functionality controller.to perform Search and List operation.
  * 
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 @WebServlet(name = "UserListCtl", urlPatterns = { "/ctl/UserListCtl" })
@@ -110,10 +110,8 @@ public class UserListCtl extends BaseCtl {
 		log.debug("UserListCtl doPOst End");
 	}
 
-	/**
-	 * Contains Submit logics
-	 */
-	@Override
+	
+	
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		log.debug("UserListCtl doPost Start");

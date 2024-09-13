@@ -2,7 +2,7 @@ package in.co.rays.project_3.exception;
 
 
 /**
- * @author KANAK SONI
+ * @author Kanak Soni
  */
 public class DuplicateRecordException extends Exception{
 

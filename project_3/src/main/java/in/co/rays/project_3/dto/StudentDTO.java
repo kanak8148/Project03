@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  * Student JavaDto encapsulates student attributes
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 

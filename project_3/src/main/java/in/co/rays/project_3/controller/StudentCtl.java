@@ -25,7 +25,7 @@ import in.co.rays.project_3.util.ServletUtility;
 /**
  * student functionality CRUD operation
  * 
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 @WebServlet(urlPatterns = { "/ctl/StudentCtl" })

@@ -7,7 +7,7 @@ import in.co.rays.project_3.exception.ApplicationException;
 import in.co.rays.project_3.exception.DuplicateRecordException;
 /**
  * Interface of College model
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public interface CollegeModelInt {

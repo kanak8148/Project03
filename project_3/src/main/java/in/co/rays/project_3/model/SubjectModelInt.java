@@ -10,7 +10,7 @@ import in.co.rays.project_3.exception.DuplicateRecordException;
 
 /**
  * Interface of Subject model
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public interface SubjectModelInt {

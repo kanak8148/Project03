@@ -118,8 +118,8 @@
 						placeholder="Enter EmailId"
 						value="<%=ServletUtility.getParameter("email", request)%>">
 				</div>
-				<div class="col-sm-3"><%=HTMLUtility.getList("collegeId", String.valueOf(dto.getCollegeId()), list1)%></div>
-				<div class="col-sm-2">
+<%-- 				<div class="col-sm-3"><%=HTMLUtility.getList("collegeId", String.valueOf(dto.getCollegeId()), list1)%></div>
+ --%>				<div class="col-sm-2">
 					<input type="submit" class="btn btn-primary btn-md"
 						style="font-size: 17px" name="operation"
 						value="<%=StudentListCtl.OP_SEARCH%>">&emsp; <input

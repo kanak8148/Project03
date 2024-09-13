@@ -5,9 +5,9 @@ import java.util.Date;
 public class ShopingDTO extends BaseDTO {
 
 	private String productName;
-	private String productPrice;
-	private Date date;
-	private String description;
+	private String shopeName;
+	private Date purchaseDate;
+	private String category;
 
 	public String getProductName() {
 		return productName;
@@ -17,45 +17,40 @@ public class ShopingDTO extends BaseDTO {
 		this.productName = productName;
 	}
 
-	public String getProductPrice() {
-		return productPrice;
+	public String getShopeName() {
+		return shopeName;
 	}
 
-	public void setProductPrice(String productPrice) {
-		this.productPrice = productPrice;
+	public void setShopeName(String shopeName) {
+		this.shopeName = shopeName;
 	}
 
-	public Date getDate() {
-		return date;
+	public Date getPurchaseDate() {
+		return purchaseDate;
 	}
 
-	public void setDate(Date date) {
-		this.date = date;
+	public void setPurchaseDate(Date purchaseDate) {
+		this.purchaseDate = purchaseDate;
 	}
 
-	public String getDescription() {
-		return description;
+	public String getCategory() {
+		return category;
 	}
 
-	public void setDescription(String description) {
-		this.description = description;
+	public void setCategory(String category) {
+		this.category = category;
 	}
 
 	@Override
 	public String getKey() {
 		// TODO Auto-generated method stub
-		return null;
+		return category;
 	}
 
 	@Override
 	public String getValue() {
 		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public String getLogin() {
-		// TODO Auto-generated method stub
-		return null;
+		return category;
 	}
 
 }

@@ -6,7 +6,7 @@ import java.util.Date;
 /**
  * user JavaDto encapsulates user attributes
  * 
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 

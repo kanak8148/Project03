@@ -19,7 +19,7 @@ import in.co.rays.project_3.util.JDBCDataSource;
 
 /**
  * JDBC implements of TimeTable model
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public class TimetableModelJDBCImpl implements TimetableModelInt {

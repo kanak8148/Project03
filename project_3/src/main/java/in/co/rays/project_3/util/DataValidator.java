@@ -4,7 +4,7 @@ import java.util.Date;
 /**
  * This class validates input data.
  * 
- * @author KANAK SONI
+ * @author Kanak Soni
  *
  */
 public class DataValidator {
@@ -228,6 +228,46 @@ public class DataValidator {
 	    					return false;
 						}	
 	    		}
+	 public static boolean isDouble(String val) {
+		    if (val == null || val.isEmpty()) {
+		        return false;
+		    }
+		    try {
+		        Double.parseDouble(val);
+		        return true;
+		    } catch (NumberFormatException e) {
+		        return false;
+		    }
+		    }
+	 public static boolean isAlphanumeric(String s) {
+			if (s == null) {
+				return false;
+			}
+
+			// Check if the string is alphanumeric
+			if (!s.matches("[a-zA-Z0-9]+")) {
+				return false;
+			}
+
+			// Check if the string contains both letters and numbers
+			boolean hasLetter = false;
+			boolean hasDigit = false;
+
+			for (char c : s.toCharArray()) {
+				if (Character.isLetter(c)) {
+					hasLetter = true;
+				} else if (Character.isDigit(c)) {
+					hasDigit = true;
+				}
+				// If both letter and digit are found, no need to check further
+				if (hasLetter && hasDigit) {
+					return true;
+				}
+			}
+
+			return false;
+		}
+
 	 
 	
 	public static void main(String[] args) {
