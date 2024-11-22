@@ -19,7 +19,7 @@ public final class ModelFactory {
 
 	private ModelFactory() {
 
-	} 
+	}
 
 	public static ModelFactory getInstance() {
 		if (mFactory == null) {
@@ -299,20 +299,5 @@ public CustomerModelInt getCustomerModel() {
 	}
 
 	return customerModel;
-}
-public CartModelInt getCartModel(){
-
-	CartModelInt cartmodel = (CartModelInt) modelCache.get("cartmodel");
-	if (cartmodel == null) {
-		if ("Hibernate".equals(DATABASE)) {
-			cartmodel = new CartModelHibImpl();
-		}
-		if ("JDBC".equals(DATABASE)) {
-			cartmodel = new CartModelHibImpl();
-		}
-		modelCache.put("cartmodel", cartmodel);
-	}
-
-	return cartmodel;
 }
 }

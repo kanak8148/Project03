@@ -10,7 +10,6 @@ public interface ORSView {
 	public String APP_CONTEXT = "/project_3";
 
 	public String PAGE_FOLDER = "/jsp";
-	public String JARVIS_VIEW = APP_CONTEXT + PAGE_FOLDER + "/Jarvies.jsp";
 
 	public String JAVA_DOC_VIEW = APP_CONTEXT + "/doc/index.html";
 
@@ -58,8 +57,8 @@ public interface ORSView {
 	public String ATM_LIST_VIEW = PAGE_FOLDER + "/AtmListView.jsp";
 	public String STOCK_VIEW = PAGE_FOLDER + "/StockView.jsp";
 	public String STOCK_LIST_VIEW = PAGE_FOLDER + "/StockListView.jsp";
-	public String CART_VIEW= PAGE_FOLDER + "/CartView.jsp";
-	public String CART_LIST_VIEW= PAGE_FOLDER + "/CartListView.jsp";
+	public String CUSTOMER_VIEW = PAGE_FOLDER + "/CustomerView.jsp";
+	public String CUSTOMER_LIST_VIEW= PAGE_FOLDER + "/CustomerListView.jsp";
 
 
 
@@ -110,6 +109,4 @@ public interface ORSView {
 	public String STOCK_LIST_CTL = APP_CONTEXT + "/StockListCtl";
 	public String CUSTUMER_CTL = APP_CONTEXT + "/ctl/CustomerCtl";
 	public String CUSTOMER_LIST_CTL = APP_CONTEXT + "/ctl/CustomerListCtl";
-	public String CART_CTL = APP_CONTEXT + "/ctl/CartCtl";
-	public String CART_LIST_CTL = APP_CONTEXT + "/ctl/CartListCtl";
 }

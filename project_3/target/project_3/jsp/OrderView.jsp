@@ -1,4 +1,3 @@
-<%@page import="java.util.Map"%>
 <%@page import="in.co.rays.project_3.controller.OrderCtl"%>
 <%@page import="in.co.rays.project_3.util.HTMLUtility"%>
 <%@page import="java.util.HashMap"%>
@@ -39,17 +38,10 @@ i.css {
 		<%@include file="calendar.jsp"%>
 
 	</div>
-
-
-
 	<div>
 
 		<main>
 		<form action="<%=ORSView.ORDER_CTL%>" method="post">
-
-			<%
-				Map<Integer, String> category = (Map<Integer, String>) request.getAttribute("categoryp");
-			%>
 
 			<div class="row pt-3 pb-4">
 				<!-- Grid column -->
@@ -149,20 +141,30 @@ i.css {
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("price", request)%></font></br>
 
 
-								<span class="pl-sm-5"><b>Catagory</b><span
-									style="color: red;">*</span></span></br>
+								<span class="pl-sm-5"><b>Order Category</b><span
+									style="color: red;">*</span></span> </br>
 								<div class="col-sm-12">
 									<div class="input-group">
 										<div class="input-group-prepend">
 											<div class="input-group-text">
-												<i class="fa fa-user grey-text" style="font-size: 1rem;"></i>
+												<i class="fa fa-address-card grey-text"
+													style="font-size: 1rem;"></i>
 											</div>
 										</div>
-										<%=HTMLUtility.getList2("Catagory", String.valueOf(dto.getCategory()), category)%>
-									</div>
+										<%-- <input type="text" name="productCategory" class="form-control"
+											placeholder="Enter State"
+											value="<%=DataUtility.getStringData(dto.getProductCategory())%>"> --%>
+										<%
+											HashMap map = new HashMap();
+											map.put("High", "High");
+											map.put("Medum", "Medum");
+
+											String htmlList = HTMLUtility.getList("Category", dto.getCategory(), map);
+										%>
+										<%=htmlList%></div>
+
 								</div>
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("Category", request)%></font></br>
-
 
 								<span class="pl-sm-5"><b> Order Date</b> <span
 									style="color: red;">*</span></span></br>
@@ -200,37 +202,38 @@ i.css {
 								</div>
 								<font color="red" class="pl-sm-5"> <%=ServletUtility.getErrorMessage("address", request)%></font></br>
 
+							
+							<%
+								if (id > 0) {
+							%>
+							<div class="text-center">
 
-								<%
-									if (id > 0) {
-								%>
-								<div class="text-center">
-
-									<input type="submit" name="operation"
-										class="btn btn-success btn-md" style="font-size: 17px"
-										value="<%=OrderCtl.OP_UPDATE%>"> <input type="submit"
-										name="operation" class="btn btn-warning btn-md"
-										style="font-size: 17px" value="<%=OrderCtl.OP_CANCEL%>">
-								</div>
-								<%
-									} else {
-								%>
-								<div class="text-center">
-
-									<input type="submit" name="operation"
-										class="btn btn-success btn-md" style="font-size: 17px"
-										value="<%=OrderCtl.OP_SAVE%>"> <input type="submit"
-										name="operation" class="btn btn-warning btn-md"
-										style="font-size: 17px" value="<%=OrderCtl.OP_RESET%>">
-								</div>
-								<%
-									}
-								%>
+								<input type="submit" name="operation"
+									class="btn btn-success btn-md" style="font-size: 17px"
+									value="<%=OrderCtl.OP_UPDATE%>"> <input type="submit"
+									name="operation" class="btn btn-warning btn-md"
+									style="font-size: 17px" value="<%=OrderCtl.OP_CANCEL%>">
 							</div>
+							<%
+								} else {
+							%>
+							<div class="text-center">
+
+								<input type="submit" name="operation"
+									class="btn btn-success btn-md" style="font-size: 17px"
+									value="<%=OrderCtl.OP_SAVE%>"> <input type="submit"
+									name="operation" class="btn btn-warning btn-md"
+									style="font-size: 17px" value="<%=OrderCtl.OP_RESET%>">
+							</div>
+							<%
+								}
+							%>
 						</div>
 					</div>
-					<div class="col-md-4 mb-4"></div>
 				</div>
+				<div class="col-md-4 mb-4"></div>
+			</div>
+
 		</form>
 		</main>
 

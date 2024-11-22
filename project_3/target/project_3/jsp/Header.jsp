@@ -33,7 +33,6 @@
 </style>
 </head>
 <body>
-
 	<%
 		UserDTO userDto = (UserDTO) session.getAttribute("user");
 
@@ -64,21 +63,6 @@
 			<ul class="nav navbar-nav ml-auto">
 				<a class="nav-link" href="#"> <span class="sr-only">(current)</span>
 				</a>
-				
-				
-				<li class="nav-item dropdown" style="padding-left: 5px"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: white;">Assistent
-					</font></a>
-
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-						<a class="dropdown-item" href="<%=ORSView.JARVIS_VIEW%>"><i
-							class="fas fa-volume-up"></i>your assistent</a>
-						
-					
-					
 				<%
 					if (userLoggedIn) {
 				%>
@@ -123,7 +107,6 @@
 							href="<%=ORSView.USER_LIST_CTL%>"><i
 							class="fa fa-user-friends"></i>User List</a>
 					</div></li>
-					
 
 				<li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
@@ -275,19 +258,6 @@
 							href="<%=ORSView.ATM_LIST_CTL%>"><i class="fa fa-paste"></i>Atm
 							List</a>
 					</div></li>
-					<li class="nav-item dropdown" style="padding-left: 5px"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: white;">Stock
-					</font></a>
-
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-						<a class="dropdown-item" href="<%=ORSView.STOCK_CTL%>"><i
-							class="fa fa-file"></i>Add stock</a> <a class="dropdown-item"
-							href="<%=ORSView.STOCK_LIST_CTL%>"><i class="fa fa-paste"></i>stock
-							List</a>
-					</div></li>
 				<li class="nav-item dropdown" style="padding-left: 5px"><a
 					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 					role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -313,54 +283,8 @@
 							href="<%=ORSView.BUS_LIST_CTL%>"><i class="fa fa-paste"></i>Bus
 							List</a>
 					</div></li>
-				<%-- 	<li class="nav-item dropdown" style="padding-left: 5px"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: white;">Assistent
-					</font></a>
 
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
 
-						<a class="dropdown-item" href="<%=ORSView.JARVIS_VIEW%>"><i
-							class="fas fa-volume-up"></i>your assistent</a>
-						 --%>
-					
-					
-					<li class="nav-item dropdown" style="padding-left: 5px"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: white;">Customer </font></a>
-					
-					
-					
-
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-						<a class="dropdown-item" href="<%=ORSView.CUSTUMER_CTL%>"><i
-							class="fa fa-file"></i>Add Customer</a> <a class="dropdown-item"
-							href="<%=ORSView.CUSTOMER_LIST_CTL%>"><i class="fa fa-paste"></i>Customer
-							List</a>
-					</div></li>
-
-<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-						<a class="dropdown-item" href="<%=ORSView.ATM_CTL%>"><i
-							class="fa fa-file"></i>Add ATM</a> <a class="dropdown-item"
-							href="<%=ORSView.ATM_LIST_CTL%>"><i class="fa fa-paste"></i>ATM List
-							List</a>
-						
-					</div></li>
-					<li class="nav-item dropdown" style="padding-left: 5px"><a
-					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-					role="button" data-toggle="dropdown" aria-haspopup="true"
-					aria-expanded="false"> <font style="color: white;">Assistent
-					</font></a>
-
-					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-						<a class="dropdown-item" href="<%=ORSView.JARVIS_VIEW%>"><i
-							class="fas fa-volume-up"></i>your assistent</a>
-						
 
 				<%
 					}

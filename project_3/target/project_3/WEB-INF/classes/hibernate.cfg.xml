@@ -16,7 +16,7 @@
 
 		<!-- ddl = data defination language -->
 		<property name="hbm2ddl.auto">update</property>
-		<property name="show_sql">true</property>	
+		<property name="show_sql">true</property>
 
 
 	<!-- 	<property name="hibernate.cache.provider_class"> org.hibernate.cache.EhCacheProvider</property>
@@ -25,8 +25,7 @@
 
 
 		<!-- hibernate DCP c3p0 Configuration -->
-		<!-- <property name="hibernate.c3p0.min_size">10
-		</property> Defailt 3 <property 
+		<!-- <property name="hibernate.c3p0.min_size">10</property> Defailt 3 <property 
 			name="hibernate.c3p0.max_size">100</property>Defailt 20 Acquired increment 
 			by default =3 <property name="hibernate.c3p0.timeout">10</property>Defailt 
 			20 <property name="hibernate.c3p0.max_statements">50</property> <property 
@@ -58,7 +57,5 @@
 			resource="in/co/rays/project_3/hbm/ProjectDTO.hbm.xml" />
 		<mapping resource="in/co/rays/project_3/hbm/BusDTO.hbm.xml" />
 		<mapping resource="in/co/rays/project_3/hbm/AtmDTO.hbm.xml" />
-			<mapping resource="in/co/rays/project_3/hbm/CustomerDTO.hbm.xml" />
-	
 	</session-factory>
 </hibernate-configuration>

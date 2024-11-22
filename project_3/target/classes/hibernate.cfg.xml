@@ -59,7 +59,6 @@
 		<mapping resource="in/co/rays/project_3/hbm/BusDTO.hbm.xml" />
 		<mapping resource="in/co/rays/project_3/hbm/AtmDTO.hbm.xml" />
 			<mapping resource="in/co/rays/project_3/hbm/CustomerDTO.hbm.xml" />
-				<mapping resource="in/co/rays/project_3/hbm/CartDTO.hbm.xml" />
 	
 	</session-factory>
 </hibernate-configuration>
